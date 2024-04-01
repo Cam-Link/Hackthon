@@ -13,7 +13,7 @@ function LoginPage() {
 
          <h3 className='p-1'>Email Address</h3>
          <input className='p-1 text-gray-800 rounded-md font-serif bg-rounded-lg bg-opacity-50 w-[15rem]' type="text"
-         placeholder='Enter Your Email Addrass' />
+         placeholder='Enter Your Email Address' />
 
          <h3 className='p-1'>Password</h3>
          <input className='p-1 text-gray-800 rounded-md font-serif bg-rounded-lg bg-opacity-50 w-[15rem]' type="Password"
