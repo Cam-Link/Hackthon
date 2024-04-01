@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom'
 
 function LoginPage() {
   return (
-    <div className='text-white flex justify-evenly'>
+    <div className='app flex justify-evenly items-center h-[72vh]'>
 
-      <div className=' w-[20rem] h-[25rem] flex flex-col text-start justify-center items-center bg-red-200 bg-opacity-40 rounded-lg'> 
+      <div className=' w-[20rem] h-[25rem] flex flex-col text-start justify-center items-center bg-blue-700 bg-opacity-40 rounded-lg'> 
 
       <h1 className='font-bold text-2xl text-red pb-4 text-center'>Log In</h1>
 
@@ -34,7 +34,7 @@ function LoginPage() {
 
 
       <div>
-        <h1 className='text-red-400 text-4xl w-[11ch]' style={{ fontFamily: 'monoton' }}>LINKING CAMERAS FOR A BETTER VIEW</h1>
+        <h1 className=' text-4xl w-[11ch]' style={{ fontFamily: 'monoton' }}>LINKING CAMERAS FOR A BETTER VIEW</h1>
       </div>
 
     </div>
