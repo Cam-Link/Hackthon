@@ -1,6 +1,9 @@
 import React from 'react'
 
+
 function SignUpPage() {
+
+
   return (
     <div className='app signup flex justify-evenly h-[72vh]'>
 
@@ -11,6 +14,7 @@ function SignUpPage() {
     <div className=''>
 
        <h3 className='p-1'>First Name</h3>
+
        <input className='p-1 text-gray-800 rounded-md font-serif bg-rounded-lg bg-opacity-50 w-[15rem]' type="text"
        placeholder='Enter Your Email Addrass' />
        <h3 className='p-1'>Last Name</h3>
