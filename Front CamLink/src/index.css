@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#dark{
-  background-color: rgb(36, 32, 32);
+#particles{
+z-index: -4;
+width: 100%;
+height: 100%;
+position: absolute;
 }
 
-#dark.app{
-  color: white;
-}
 

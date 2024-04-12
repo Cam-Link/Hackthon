@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Themes from './Themes'
 
 
 
@@ -18,7 +17,7 @@ function Header() {
       <div className='flex space-x-4 text-[1.2rem]'>
 
         <div>
-          <Themes />
+          
         </div>
         <Link to='/About'>
           <div>

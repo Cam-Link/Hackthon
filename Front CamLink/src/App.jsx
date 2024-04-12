@@ -1,33 +1,26 @@
-import React, {useState, createContext} from 'react';
+import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Routing from './Components/Routing';
 import Header from './Pages/Header';
 import Footer from './Pages/Footer';
+import ParticlesComponent from './Components/ParticlesBg';
 
 
 
-export const ThemeContext = createContext()
+
 
 function App() {
-
-  const[theme, setThemes] = useState('light')
-
-  const toggleTheme = ()=> {
-    setThemes(theme === 'dark' ? 'light' : 'dark'  )
-  }
-
+  
   return (
     <BrowserRouter>
-
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
       
-      <div className='app flex flex-col justify-between h-[] ' id={theme}>
+      <div className='app flex flex-col justify-between h-[] ' >
+        <ParticlesComponent id = "particles"/>
         <Header />
             <Routing />
         <Footer />
 
       </div>
-    </ThemeContext.Provider >
     </BrowserRouter>
   );
 }
