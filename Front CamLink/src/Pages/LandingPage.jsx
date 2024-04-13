@@ -1,56 +1,110 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, {useEffect} from 'react';
 import { Typography, Container, Paper, Box, Button } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Background from '../assets/background.mp4'
+import Back from '../assets/back.mp4'
+import Back3 from '../assets/back3.mp4'
+import {Link} from 'react-router-dom'
+
 
 
 function LandingPage() {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+
+  useEffect(()=>{
+    AOS.init({ duration: 2000})
+  }, [])
 
   return (
+
     <div>
-      <div className="flex justify-evenly mb-0 mt-11" data-aos='fade-up'>
-        <div className='w-[45rem]'>
-          <h1 className='font-bold text-4xl p-2 animate-bounce text-red-600' style={{ fontFamily: 'monoton' }}>CamLink</h1>
-          <p className='font-serif font-bold text-2xl'>"Empower Your Presentations, Expand Your Perspectives"</p>
-          <p className='p-4' style={{ fontFamily: 'Poppins', fontWeight: '400', fontSize: '20px' }}>Introducing a versatile solution tailored for seamless presentations and immersive event experiences. Our innovative platform offers two distinct options: first, facilitating screen sharing with synchronized audio for seamless sessions even without a projector; second, a multi-camera streaming service providing viewers with diverse perspectives for an enriched event viewing experience. Elevate your presentations and events with our comprehensive solution.</p>
-          <Link to='/Home'>
-            <button className='bg-blue-500 rounded-lg text-white text-xl p-2 font-serif m-3 w-60 hover:bg-blue-600 active:bg-blue-700 hover:scale-110 duration-300' variant="contained" disableElevation>Go to Livestream</button>
-          </Link>
+        <div className='overlay'></div>
+
+      <video className='backvid' src={Background} autoPlay loop muted  />
+
+      <div className='content flex justify-evenly'>
+        <div className='w-[30%]' >
+            <h1  className='font-bold text-4xl p-2 animate-bounce text--900' style={{ fontFamily: 'monoton' }}>CamLink</h1>
+            <p className='p-4'>Introducing a versatile solution tailored for seamless presentations and immersive event experiences. Our innovative platform offers two distinct options: first, facilitating screen sharing with synchronized audio for seamless sessions even without a projector; second, a multi-camera streaming service providing viewers with diverse perspectives for an enriched event viewing experience. Elevate your presentations and events with our comprehensive solution.</p>
         </div>
-        <div>
-          <img className='h-[30rem] w-[40rem]' src="./Images/Lp.jpg" alt="" />
-        </div>
+
+          <div className='w-[40%]'>
+            <h1 className='p-11'>Unlock a world of exclusive benefits by creating your account today!
+            </h1>
+
+            <div className='flex justify-around'>
+
+              <Link to = '/LogIn'>
+              <div><button className='bg-blue-600 text-white rounded-lg p-2 w-[10rem]'>Sign In</button></div>
+              </Link>
+
+              <Link to='/SignUp'>
+              <div><button className='bg-blue-600 text-white rounded-lg p-2 w-[10rem]'>Register</button></div>
+              </Link>
+            </div>
+
+          </div>
       </div>
 
-
-      <h1 className='text-center font-bold text-4xl mt-[10rem] text-blue-700' data-aos='fade-up'>Our Mission</h1>
-
-
-      <div className='flex flex-col md:flex-row gap-11 justify-evenly m-11 mr-[2.5rem] ml-[2.5rem]'>
-        <div data-aos='fade-right'>
-          <h1 className='font-bold pb-2 text-xl' style={{ fontFamily: 'Poppins', fontWeight: '700', fontSize: '20px' }}>Facilitating Seamless Presentations Without Projectors:</h1>
-          <p style={{ fontFamily: 'Poppins' }}>One aim is to provide a solution for presentations that do not rely on traditional projectors. By offering screen sharing with synchronized audio, the aim is to ensure that sessions can proceed smoothly even in the absence of a projector. This emphasizes the versatility and adaptability of the platform to different presentation environments.</p>
-          <img className='w-[60rem]' src='./Images/event2.png' alt='' />
-        </div>
-        <div data-aos='zoom-in'>
-          <h1 className='font-bold text-xl pb-2' style={{ fontFamily: 'Poppins', fontWeight: '700', fontSize: '20px' }}>Enhancing Event Viewing Experience with Multiple Camera Streams:</h1>
-          <p style={{ fontFamily: 'Poppins', fontWeight: '400' }}>Another aim is to enrich the experience of event viewers by offering multiple camera streams. By providing viewers with diverse perspectives through a multi-camera streaming service, the aim is to create a more immersive and engaging viewing experience. This feature enhances the overall quality and enjoyment of the event for the audience.</p>
-          <img className='w-[60rem]' src='./Images/events.png' alt='' />
-        </div>
-        <div data-aos='fade-left'>
-          <h1 className='font-bold text-xl pb-2' style={{ fontFamily: 'Poppins', fontWeight: '700', fontSize: '20px' }}>Promoting Seamless and Engaging Sessions:</h1>
-          <p style={{ fontFamily: 'Poppins', fontWeight: '400' }}>Overall, the overarching aim is to promote seamless and engaging sessions for both presenters and viewers. Whether it's through screen sharing for presentations or multiple camera streams for events, the aim is to ensure that sessions run smoothly while offering a high-quality and immersive experience for all participants.</p>
-          <img className='w-[60rem]' src="./Images/LandingPage.jpg" alt="" />
-        </div>
-      </div>
+      <div>
+               <h1 className='text-center font-bold text-4xl mt-[10rem] text-blue-700' data-aos='fade-up'>Our Mission</h1>
 
 
+     <div className='flex flex-col md:flex-row gap-11 justify-evenly m-[5rem]'>
 
-      <Container data-aos='zoom-in'>
+  <div data-aos='fade-right'>
+    <h1 className='font-bold text-xl pb-2'>Facilitating Seamless Presentations Without Projectors:</h1>
+    <p>One aim is to provide a solution for presentations that do not rely on traditional projectors. By offering screen sharing with synchronized audio, the aim is to ensure that sessions can proceed smoothly even in the absence of a projector. This emphasizes the versatility and adaptability of the platform to different presentation environments.</p>
+    <img className='w-[20rem]' src='./Images/event2.png' alt='' />
+  </div>
+  <div data-aos='zoom-in'>
+    <h1 className='font-bold text-xl pb-2'>Enhancing Event Viewing Experience with Multiple Camera Streams:</h1>
+
+    <p>Another aim is to enrich the experience of event viewers by offering multiple camera streams. By providing viewers with diverse perspectives through a multi-camera streaming service, the aim is to create a more immersive and engaging viewing experience. This feature enhances the overall quality and enjoyment of the event for the audience.</p>
+    <img className='w-[20rem]' src='./Images/events.png' alt='' />
+  </div>
+  <div data-aos='fade-left'>
+    <h1 className='font-bold text-xl pb-2'>Promoting Seamless and Engaging Sessions:</h1>
+    <p style={{ fontFamily: 'Poppins', fontWeight: '400' }}>Overall, the overarching aim is to promote seamless and engaging sessions for both presenters and viewers. Whether it's through screen sharing for presentations or multiple camera streams for events, the aim is to ensure that sessions run smoothly while offering a high-quality and immersive experience for all participants.</p>
+    <img className='w-[20rem]' src="./Images/LandingPage.jpg" alt="" />
+  </div>
+</div>
+               </div>
+
+         <div>
+          <h1 className='font-bold text-4xl text-center mt-[5rem]'>What we offer</h1>
+         </div>
+
+          <div className='m-[5rem] flex justify-evenly gap-[4rem] mr-[5rem] ml-[5rem]'> 
+            <div className='w-[40%]' data-aos='zoom-in'>
+                <h1 className='font-serif font-bold text-4xl text-center'>Captivate Your Audience with Multi-Camera Flexibility.</h1>
+                <p className='p-4'>Experience the power of live streaming! Our innovative platform allows hosts to seamlessly switch between multiple cameras, giving them the flexibility to choose the perfect angle for their audience's viewing pleasure. Elevate your broadcasts with ease and captivate your viewers with every moment</p>
+            </div>
+                      
+            <div data-aos='flip-left'>
+              <video className='h-[25rem] w-[50rem] object-cover rounded-lg' src={Back} autoPlay muted loop></video>
+            </div>
+          </div>
+               
+
+              
+
+
+
+               <div className='flex justify-evenly ml-[5rem] mr-[5rem] gap-x-40 mt-[10rem]'>
+                <div className='h-[25rem] w-[30rem]'>
+                       <video className='rounded-lg' data-aos='fade-right' src={Back3} autoPlay muted loop />
+                </div>
+
+                <div className='w-[30%]' data-aos='flip-left'>
+                  <h1 className='font-bold font-serif text-4xl text-center'> Your Story, Your View!</h1>
+                  <p>Empower your audience to become directors of their own experiences with our innovative multi-camera streaming platform. From intimate gatherings to grand celebrations, every angle is captured, ensuring no detail is missed. With the ability to record events from their unique perspectives, individuals can relive cherished moments in stunning clarity, preserving memories to last a lifetime.</p>
+                </div>
+               </div>
+
+
+
+               <Container data-aos='zoom-in' className=''>
         <Typography variant='h1' sx={{ my: 4, textAlign: 'center', color: 'primary.main' }}>Services</Typography>
         <Typography variant='h2'>Overview</Typography>
         <Box
@@ -70,13 +124,16 @@ function LandingPage() {
             },
           }}>
             <Box sx={{ m: 2 }}>
-              <Typography variant='h3' sx={{ m: 3 }}>
+              <Typography variant='h4' sx={{ m: 3,color: 'text.primary' }}>
                 Screen Sharing
               </Typography>
-              <Typography sx={{ mt: 3, }}>
-                We offer screen sharing with synchronized audio, catering to scenarios where traditional projection equipment might be unavailable. This functionality facilitates remote meetings, educational lectures, and collaborative work, enhancing engagement and comprehension for participants. Its flexibility and accessibility enable usage from any location with an internet connection, while its cost-effectiveness eliminates the need for specialized hardware like projectors, making it suitable for various professional and educational settings.
+              <Typography sx={{ mt: 3, color: 'text.primary' }}>
+               
+                      
+We offer synchronized screen sharing and audio, ideal for situations without traditional projectors. It boosts engagement in remote meetings, lectures, and collaboration. Its flexibility allows use from anywhere with internet access, and its cost-effectiveness makes it suitable for various professional and educational settings.
+
               </Typography>
-              <Button variant='contained' sx={{ mt: 2 }}>Learn More</Button>
+              <img src="./Images/screensharing.jpg" alt="" />
             </Box>
           </Paper>
           <Paper elevation={24} sx={{
@@ -88,13 +145,13 @@ function LandingPage() {
             },
           }}>
             <Box sx={{ m: 2 }}>
-              <Typography variant='h3' sx={{ m: 3 }}>
+              <Typography variant='h4' sx={{ m: 3, color: 'text.primary' }}>
                 Mulitple Camera Linking
               </Typography>
-              <Typography sx={{ mt: 3, }}>
+              <Typography sx={{ mt: 3, color: 'text.primary' }}>
                 The camera linking service provides a multiple camera streaming option, allowing streams from various cameras to be sent to the main streamer. This feature enhances event viewing experiences by offering viewers multiple perspectives, enabling them to switch between camera angles for a more immersive and dynamic viewing experience.
               </Typography>
-              <Button variant='contained' sx={{ mt: 2 }}>Learn More</Button>
+             <img className='w-[10rem] ml-11' src="./Images/cameraLink.jpg" alt="" />
             </Box>
           </Paper>
           <Paper elevation={24} sx={{
@@ -106,13 +163,13 @@ function LandingPage() {
             },
           }}>
             <Box sx={{ m: 2 }}>
-              <Typography variant='h3' sx={{ m: 3 }}>
-                Provide Recorded Videos
+              <Typography variant='h4' sx={{ m: 3, color: 'text.primary' }}>
+              Live Streaming
               </Typography>
-              <Typography sx={{ mt: 3, }}>
-                The service enables users to access recorded videos directly from our website. This straightforward functionality allows users to conveniently retrieve past presentations or events that have been recorded and stored on our platform. Whether for review, reference, or sharing with others, users can easily locate and watch recorded videos at their own convenience, eliminating the need for external storage or complex retrieval processes.
+              <Typography sx={{ mt: 3, color: 'text.primary'}}>
+              Capture the essence of every event live, from graduations to tech showcases and concerts. Experience the excitement, engage with speakers, and never miss a beat with our seamless streaming service. Elevate your event experience and connect to the heart of every occasion from anywhere.
               </Typography>
-              <Button variant='contained' sx={{ mt: 2 }}>Learn More</Button>
+             <img src="./Images/Lp.jpg" alt="" />
             </Box>
           </Paper>
         </Box>

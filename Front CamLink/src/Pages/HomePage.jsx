@@ -21,7 +21,7 @@ function HomePage() {
     <NavBar/>
  </div>
 
- <div className='mr-11'>
+ <div className='mr-11 mt-[4rem]'>
     <h1 className='font-bold text-4xl text-white'>On going</h1>
     <div className='grid grid-cols-4 gap-[3rem] shadow rounded-lg '>
       {

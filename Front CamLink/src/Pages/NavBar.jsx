@@ -61,7 +61,7 @@ function NavBar() {
         variants={containerVariants}
         animate={containerControls}
         initial="close"
-        className="text-white text-lg p-4 flex flex-col h-[43rem] justify-start items-start bg-black w-[15rem] bg-opacity-40 m-1 rounded-lg"
+        className="text-gray-400 text-lg p-4 flex flex-col h-[43rem] justify-start items-start bg-black w-[15rem] bg-opacity-40 m-1 rounded-lg"
       >
         <button
           className="p-1 rounded-full flex"
@@ -93,16 +93,16 @@ function NavBar() {
             <div className="flex flex-col gap-4">
               <Link to="/Home">
                
-               <h1 className="hover:bg-black-400 hover:scale-110 duration-300 hover:text-black text-xl p-2 rounded-lg w-[12rem] font-thin">Home</h1>
+               <h1 className="hover:bg-black-200 hover:scale-110 duration-300 hover:text-gray-800 text-xl p-2 rounded-lg w-[12rem] font-thin">Home</h1>
               </Link>
               <Link to="/CamLink"> 
-                <h1 className="hover:bg-gray-400 hover:scale-110 duration-300 hover:text-black  text-xl p-2 rounded-lg w-[12rem] font-thin">CamLink</h1>
+                <h1 className="hover:bg-black-200 hover:scale-110 duration-300 hover:text-gray-800  text-xl p-2 rounded-lg w-[12rem] font-thin">CamLink</h1>
               </Link>
               <Link to="/ScreenShare">
-                <h1 className="hover:bg-gray-400 hover:scale-110 duration-300 hover:text-black text-xl p-2 rounded-lg w-[12rem] font-thin">Screen Share</h1>
+                <h1 className="hover:bg-black-200 hover:scale-110 duration-300 hover:text-gray-800  text-xl p-2 rounded-lg w-[12rem] font-thin">Screen Share</h1>
               </Link>
               <Link to="/About">
-                <h1 className=" hover:bg-gray-400 hover:scale-110 duration-300 hover:text-black text-xl p-2 rounded-lg w-[12rem] font-thin">About Us</h1>
+                <h1 className=" hover:bg-black-200 hover:scale-110 duration-300 hover:text-gray-800  text-xl p-2 rounded-lg w-[12rem] font-thin">About Us</h1>
               </Link>
             </div>
           ) : (
@@ -110,7 +110,7 @@ function NavBar() {
               <Link to="/Home">
                 <motion.div initial={{ scale: 1 }}
                  whileTap={{ scale: 1.2 }}
-                 whileHover={{ opacity: 0.4, scale: 1.4 }}
+                 whileHover={{ opacity: 0.1, scale: 1.4 }}
                 >
                  <HomeIcon sx={{ fontSize: 30}}/>
                 </motion.div>
@@ -118,7 +118,7 @@ function NavBar() {
               <Link to="/CamLink">
                 <motion.div initial={{ scale: 1 }}
                  whileTap={{ scale: 1.2 }}
-                 whileHover={{ opacity: 0.4, scale: 1.4 }}
+                 whileHover={{ opacity: 0.1, scale: 1.4 }}
                 >
                  <LinkedCameraIcon sx={{ fontSize: 30}}/>
                 </motion.div>
@@ -126,7 +126,7 @@ function NavBar() {
               <Link to="/ScreenShare">
                 <motion.div initial={{ scale: 1 }}
                  whileTap={{ scale: 1.2 }}
-                 whileHover={{ opacity: 0.4, scale: 1.4 }}
+                 whileHover={{ opacity: 0.1, scale: 1.4 }}
                 >
                  <ScreenshotMonitorIcon sx={{ fontSize: 30}} />
                 </motion.div>
@@ -134,7 +134,7 @@ function NavBar() {
               <Link to="/AboutUs">
                 <motion.div initial={{ scale: 1 }}
                  whileTap={{ scale: 1.2 }}
-                 whileHover={{ opacity: 0.4, scale: 1.4 }}
+                 whileHover={{ opacity: 0.1, scale: 1.4 }}
                 >
                  <GroupsIcon sx={{ fontSize: 30}}/>
                 </motion.div>
