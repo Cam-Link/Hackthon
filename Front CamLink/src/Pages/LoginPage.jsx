@@ -32,11 +32,11 @@ function SliderForm() {
             <SupervisedUserCircle/>
             </a>
             
-          </div>
+          </div> 
           <span className="shared-p">or use your email for registration</span>
           <input className='in' type="text" placeholder="Name" />
           <input className='in' type="email" placeholder="Email" />
-          <input className='in' type="password" placeholder="Password" />
+          <input className='in' type="Password" placeholder="Password" />
           <button className='btn'>Sign Up</button>
         </form>
       </div>

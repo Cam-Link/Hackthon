@@ -60,6 +60,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .social-container {
@@ -173,8 +174,8 @@ span {
 .sign-up-container {
     left: 0;
     width: 50%;
-    z-index: 1;
-    opacity: 0;
+    z-index: 2;
+    
 }
 
 .overlay-container {
