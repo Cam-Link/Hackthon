@@ -12,13 +12,13 @@ import {Link} from 'react-router-dom'
 function LandingPage() {
 
   useEffect(()=>{
-    AOS.init({ duration: 2000})
+    AOS.init({ duration: 2700})
   }, [])
 
   return (
 
-    <div>
-        <div className='overlay'></div>
+    <div className='bg-blur '>
+        <div className='overlay'> </div>
 
       <video className='backvid ' src={Background} autoPlay loop muted style={{marginBottom:'150px'}}  />
 

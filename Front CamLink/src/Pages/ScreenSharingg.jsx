@@ -13,10 +13,10 @@ function ScreenSharingg() {
       </div>
 
       <div className='flex gap-14 mt-10'>
-        <button className='bg-red-600 text-white rounded-full px-6 py-3 transition-all font-bold hover:bg-red-900 duration-350 hover:scale-150 font-serif'>
+        <button className='bg-red-700 text-grey-300 rounded-full px-6 py-3 transition-all font-bold hover:bg-red-900 duration-350 hover:scale-150 font-serif'>
           Stop
         </button>
-        <button className='bg-blue-700 text-white rounded-full px-6 py-3 transition-all font-bold hover:bg-green-900 duration-350 hover:scale-150 font-serif '>
+        <button className='bg-indigo-700 text-grey-300 rounded-full px-6 py-3 transition-all font-bold hover:bg-indigo-900 duration-350 hover:scale-150 font-serif '>
           Go Live
         </button>
       </div>
