@@ -87,7 +87,7 @@ function About() {
      {/* person two */}
     <div className='h-fit group'>
       <div className='relative overflow-hidden'>
-      <img src="Images/Image/ella.JPG" alt="" className='w-full h-[21rem] rounded-xl' />
+      <img src="Images/Image/abeni.JPG" alt="" className='w-full h-[21rem] rounded-xl' />
       
         <div className='absolute h-full w-full bg-black/20 flex items-end justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 cursor-pointer'>
         {/*  */}

@@ -32,6 +32,7 @@ function CamLinkPage() {
       <div className='pt-[1.5rem] pl-[2rem]'>
         <input id ='input-link'className='rounded-full bg-gray-800 bg-opacity-50 h-[3rem] w-[28rem]'type ="text" placeholder='  Link code'/>
         <button className='bg-indigo-950  rounded-md ml-[2rem] h-[2.5rem] w-[6rem] text-lg hover:bg-transparent hover:scale-90' onClick={handelContribute}>link</button>
+        
       </div>
       </div>
       <div className=' text-gray-300 felx flex-col gap-[2rem] bg-cyan-950 bg-opacity-70 p-4 h-[13rem] w-[50rem] justify-around rounded-2xl' style={{backgroundColor: "#06081f "}} data-aos="zoom-in-up">
